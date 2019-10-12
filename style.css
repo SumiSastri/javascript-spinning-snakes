@@ -1,0 +1,63 @@
+h1 {
+	font-family: 'Mansalva', cursive;
+	color: darkolivegreen;
+}
+
+#snake,
+#snake2,
+#snake3,
+#snake4,
+#snake5,
+#snake6 {
+	position: absolute;
+	width: 300px;
+	height: 300px;
+}
+#snake {
+	top: 10%;
+	right: 70%;
+}
+#snake2 {
+	top: 40%;
+	right: 70%;
+}
+
+#snake3 {
+	top: 5%;
+	left: 70%;
+}
+#snake4 {
+	top: 25%;
+	left: 20%;
+}
+#snake5 {
+	top: 35%;
+	left: 40%;
+}
+#snake6 {
+	top: 50%;
+	left: 70%;
+}
+
+.spinsnake {
+	-webkit-animation: spin 2s linear infinite;
+	-moz-animation: spin 2s linear infinite;
+	animation: spin 2s linear infinite;
+}
+
+@-moz-keyframes spin {
+	100% {
+		-moz-transform: rotate(360deg);
+	}
+}
+@-webkit-keyframes spin {
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+@keyframes spin {
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(50deg);
+	}
+}
